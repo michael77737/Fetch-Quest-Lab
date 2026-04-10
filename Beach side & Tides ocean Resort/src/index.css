@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+  --ink: #245370;
+  --ink-soft: #4d6f84;
+  --ink-strong: #0d3046;
+  --panel-border: rgba(12, 64, 95, 0.22);
+  --panel-shadow: 0 18px 40px rgba(15, 78, 115, 0.16);
+  --app-bg: #e6f6ff;
+  --body-font: 'Manrope', 'Segoe UI', sans-serif;
+  --heading: 'Playfair Display', Georgia, serif;
+
+  font-family: var(--body-font);
+  color: var(--ink);
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(255, 222, 141, 0.65), transparent 43%),
+    radial-gradient(circle at 85% 8%, rgba(118, 220, 255, 0.54), transparent 45%),
+    linear-gradient(180deg, var(--app-bg), #d7efff 60%, #c6e6ff);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading);
+}
+
+p {
+  margin: 0;
+}
